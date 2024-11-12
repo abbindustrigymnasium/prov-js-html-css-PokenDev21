@@ -12,7 +12,12 @@
     <script>
         // Här ska din JavaScript kod vara
 
-
+        function CheckEven(x) {
+            return !(x % 2);
+        }
+        let numbers = [12, 25, 37, 43, 59, 61]
+        let NewList = numbers.filter(CheckEven)
+        console.log(NewList)
     </script>
 </body>
 

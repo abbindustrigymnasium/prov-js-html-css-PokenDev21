@@ -7,11 +7,19 @@
 
 <body>
     <!-- Här ska din HTML kod vara -->
-
+    <input id = "adress">
+    <button onclick="showImage()">
+        Show image
+    </button>
+    <img id = "bild">
     <script>
         // Här ska din JavaScript kod vara
-
-
+        function showImage()
+        {
+            let UserInput = document.getElementById('adress').value
+            document.getElementById('bild').src = UserInput
+        }
+        
     </script>
 </body>
 
